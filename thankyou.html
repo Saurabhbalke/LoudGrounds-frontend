@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.css" />
+    <!-- custom css -->
+    <title>Loud Grounds : Events Planning Made Easy</title>
+    <!-- aos cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/res.css">
+    <!-- <link rel="stylesheet" href="<?=base_url('assets/css/step.css')?>"> -->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        var site_url = "";
+    </script>
+</head>
+
+<body >
+
+
+
+    <section class="thank-sec pt-0 sec">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <img src="assets/images/lg-logosvg.svg" alt="" class="lg-logo">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-12">
+                    <div class="thank-wrap">
+                        
+                        <h3 class="sec-head text-center">
+                            Thank you
+                        </h3>
+                        <p class="para text-center" style="color: black;">
+                            Hey there! Thanks for sharing your interests with us. We're working on creating something remarkable & will get back to you soon.
+                        </p>
+                        <a href="index.html" class="main-btn center">
+                            <span>Back To Home</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="ft-col">
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.svg" alt="">
+                        </a>
+                        <h2 class="ft-head mt-20">
+                            LOUDGROUNDS is a UAE based platform that helps people in organizing events, the easy way. 
+                        </h2>
+                        <!-- <div class="sub-wrap">
+                            <input type="text" placeholder="Your Email Address">
+                            <button>
+                                <img src="assets/images/sub-arrow.svg" alt="">
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-12">
+                    <div class="ft-col">
+                        <ul class="ft-list">
+                            <!-- <li>
+                                <a href="">Our Services</a>
+                            </li> -->
+                            <li>
+                                <a href="index.html#events">Events</a>
+                            </li>
+                            <li>
+                                <a href="index.html#venues">Venues</a>
+                            </li>
+                            <li>
+                                <a href="index.html#artists">Artists</a>
+                            </li>
+                            <li>
+                                <a href="index.html#themes">Browse By Themes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <h3 class="ft-head">
+                        DROP US A LINE
+                    </h3>
+                    <ul class="con-list">
+                        <li>
+                            <a href="mailto:info@loudgrounds.com">
+                                <img src="assets/images/mail.svg" alt="">
+                                <span>info@loudgrounds.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="assets/images/instagram.svg" alt="">
+                                <span>@Loudgrounds</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="assets/images/facebook.svg" alt="">
+                                <span>@Loudgrounds</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="ft-btm">
+                <p>© 2023 - 2024 Loudgrounds  . All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- validate cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <script src="<?=base_url()?>assets/js/step.js"></script>
+    <!-- custom js -->
+
+
+    <script>
+       
+        $("#phone").intlTelInput({
+            initialCountry: "in",
+            separateDialCode: true,
+            // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+        });
+
+        $(window).scroll(function(){
+            if($(window).scrollTop() > 300){
+                $('.main-nav').addClass('active');
+            }else{
+                $('.main-nav').removeClass('active');
+            }
+        }).trigger('scroll');
+        AOS.init();
+        $('.menu-btn').click(function () {
+            $('.mobile-nav').addClass('active');
+            $('.backdrop').addClass('active');
+        })
+        $('.menu-close, .backdrop, .nav-list li a').click(function () {
+            $('.mobile-nav').removeClass('active');
+            $('.backdrop').removeClass('active');
+        })
+        var bnswiper = new Swiper(".art-swiper", {
+            loop: false,
+            slidesPerView: 3,
+            autoplay: {
+                delay: 5000
+            },
+            navigation: {
+                nextEl: ".re-next",
+                prevEl: ".re-prev",
+            },
+            spaceBetween: 0,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 15,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+        });
+        var cswiper = new Swiper(".test-swiper", {
+            loop: false,
+            slidesPerView: 2.3,
+            autoplay: {
+                delay: 5000
+            },
+            navigation: {
+                nextEl: ".test-next",
+                prevEl: ".test-prev",
+            },
+            spaceBetween: 0,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                },
+                640: {
+                    slidesPerView:1,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView:1,
+                    spaceBetween: 20,
+                },
+            },
+        });
+
+        document.querySelectorAll('.vr-nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - document.querySelector('.main-nav').offsetHeight,
+                    behavior: 'smooth'
+                });
+            
+            });
+        });
+
+        function handleScroll() {
+            const sections = document.querySelectorAll('.scroll-sec');
+            sections.forEach(section => {
+                const top = section.offsetTop - document.querySelector('.main-nav').offsetHeight;
+                const bottom = top + section.clientHeight;
+                if (window.scrollY >= top && window.scrollY < bottom) {
+                    document.querySelectorAll('.vr-nav li').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    document.querySelector(`.vr-nav a[href="#${section.id}"]`).parentElement.classList.add('active');
+                }
+            });
+        }
+
+        // Call the function on page load
+        window.addEventListener('load', handleScroll);
+
+        // Call the function on scroll
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</body>
+
+</html>
